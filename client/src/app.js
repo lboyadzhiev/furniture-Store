@@ -8,6 +8,10 @@ import { registerPage } from './views/register.js';
 import { loginPage } from './views/login.js';
 import { myPage } from './views/myFurniture.js';
 
+import * as api from './api/data.js';
+
+window.api = api;
+
 page('/', dashboardPage);
 page('/details/:id', detailsPage);
 page('/create', createPage);
